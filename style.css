@@ -1,0 +1,255 @@
+/* GOLBAL */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: chapaza;
+    src: url(fonts/Chapaza.ttf);
+  }
+
+body{
+    font-family: 'chapaza', sans-serif;
+    font-size: 14px;
+   
+}
+/* END GLOBAL */
+
+
+/* HEADER */
+header{
+    background-color: #F0BC2B;
+    padding: 0px 130px;
+}
+.navbar-brand{
+    font-size: 25px;
+    
+}
+
+.collapse{
+    font-size: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 15px;
+    color: #0B0B0B;
+    font-size: 20px;
+    
+}
+/* M-T */
+@media only screen and (max-width: 767px){
+    header{
+        padding: 0px 0px;
+    }
+
+}
+/* END HEADER */
+
+/* BANNER */
+.contactbtn{
+    background-color:  black;
+    border: none;
+    padding: 8px 25px;
+}
+.contactbtn:hover{
+    background-color: #F0BC2B;
+}
+.bg-image{
+    background-image: url("images/headerimage.jpg");
+     height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+
+
+}
+
+.banner{
+    padding-left: 130px;
+    padding-top: 257px;
+    
+}
+.p1{
+    font-size: 25px;
+    color: rgb(11, 11, 11);
+    text-transform: uppercase;
+    line-height: 1px;
+}
+.p2{
+    font-size: 18px;
+    font-family: auto;
+}
+.h1{
+font-size: 80px;
+line-height: 75px;
+}
+/* END BANNER */
+
+/* FORM */
+.formBgImg{
+    background-image: url("images/formBgImg.jpg");
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+    
+}
+.btn-success{
+    background-color: #0B0B0B;
+    border: none;
+    padding: 8px 25px;
+    
+}
+.btn-success:hover{
+    background-color: rgb(240, 188, 43);
+}
+form{
+    margin: 75px 100px  30px 100px;
+    
+    
+}
+.bg-color{
+    background-color: rgba(250, 185, 6, 0.534);
+    padding: 100px 0px;
+    
+}
+.bannerside{
+    padding-top: 150px;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color:  #F0BC2B;
+    border-radius: 50%;
+    display: inline-block;
+       
+        box-shadow: 0px 3px 24.57px 2.43px rgba(0, 0, 0, 0.18);
+       
+      }
+      .dotblack{
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+           
+            box-shadow: 0px 3px 24.57px 2.43px rgba(0, 0, 0, 0.18);
+      }
+.disp{
+    display: flex;
+}
+.paraspace{
+    margin-left: 15px;
+    line-height: -3px;
+    font-size: 18px;
+}
+     
+
+/* FORM END  */
+
+
+/* CARD  */
+.card-container{
+    margin-top: 100px;
+}
+.cardhead{
+    font-size: 50px;
+}
+.cardheaddot{
+    height: 40px;
+    width: 40px;
+    background-color:  #F0BC2B;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+       
+        box-shadow: 0px 3px 24.57px 2.43px rgba(0, 0, 0, 0.18);
+}
+.card-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.fa-2xl {
+    margin-left: 65px;
+    margin-top: 10px ;
+    font-size: 2.7em;
+    line-height: .03125em;
+    color: #0B0B0B;
+    
+}
+.card{
+    border-radius: 50px;
+}
+.fa-2xl:hover{
+    color: #F0BC2B;
+}
+/* CARDS END */
+
+
+
+
+
+
+
+
+
+
+
+/* need consultaion */
+.card-footer{
+background: linear-gradient(to top, #3204fdba, #9907facc), url("images/img4.jpg") no-repeat top center;
+height: 370px;
+width: auto;
+padding-left: 260px ;
+padding-right: 260px ;
+padding-top: 140px;
+padding-bottom: 140px;
+}
+ .cfooter-h1{
+    /* font-size: 50px; */
+    display: inline-block;
+    font-size: 50px;
+} 
+.cfooter-p{
+    display: inline-block;
+     font-size: 14px; 
+}
+.consulbtn{
+    position: relative;
+    bottom: 30px;
+    left: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px ;
+    padding-right: 50px ;
+    border: none;
+    font-size: 25px;
+    background-color: black;
+    text-align: left;
+    box-shadow: 0px 6px 53.1px 5.9px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    
+}
+.consulbtn:hover{
+    background-color: #F0BC2B;
+}
+
+  
+
+  
+
+
+/* need consultaion End  */
+
+
+
+/* shop */
+.shop{
+    margin-top: 145px ;
+}
+
+
+
+
+/* shop end */
