@@ -56,14 +56,35 @@ header{
 .bg-image{
     background-image: url("images/headerimage.jpg");
      height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
 
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%);
+  position: relative;
+  
+/* background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 46%, #f0bc2b 100%); */
 
 }
+.bg-image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 46%, #fdba25 72%);
+
+    
+
+    opacity: 0.9;
+    
+}
+.contactbtn, .p1, .h1, .p2{
+    position: relative;
+    z-index: 10;
+}
+
 
 .banner{
     padding-left: 130px;
@@ -90,8 +111,45 @@ line-height: 75px;
 .formBgImg{
     background-image: url("images/formBgImg.jpg");
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
     
 }
+.formBgImg::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgb(240, 188, 43,0.6);
+    
+}
+.form-content{
+    position: relative;
+    z-index: 10;
+}
+/* .card-footer{
+    height: 370px;
+    background-image: url(images/img4.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    }
+    .card-footer:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color:  rgb(240, 188, 43,0.6);
+    }
+    .consulbtn, .cfooter-p, .cfooter-h1{
+        position: relative;
+        z-index: 10;
+    } */
 .btn-success{
     background-color: #0B0B0B;
     border: none;
@@ -107,7 +165,7 @@ form{
     
 }
 .bg-color{
-    background-color: rgba(250, 185, 6, 0.534);
+    
     padding: 100px 0px;
     
 }
@@ -155,7 +213,7 @@ form{
 .cardheaddot{
     height: 40px;
     width: 40px;
-    background-color:  #F0BC2B;
+    background-color:  rgb(240, 188, 43);
     border-radius: 50%;
     display: inline-block;
     margin-left: 10px;
@@ -197,14 +255,26 @@ form{
 
 
 /* need consultaion */
+
 .card-footer{
-background: linear-gradient(to top, #3204fdba, #9907facc), url("images/img4.jpg") no-repeat top center;
 height: 370px;
-width: auto;
-padding-left: 260px ;
-padding-right: 260px ;
-padding-top: 140px;
-padding-bottom: 140px;
+background-image: url(images/img4.jpg);
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.card-footer:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:  rgb(240, 188, 43,0.6);
+}
+.consulbtn, .cfooter-p, .cfooter-h1{
+    position: relative;
+    z-index: 10;
 }
  .cfooter-h1{
     /* font-size: 50px; */
@@ -212,14 +282,11 @@ padding-bottom: 140px;
     font-size: 50px;
 } 
 .cfooter-p{
-    display: inline-block;
+    
      font-size: 14px; 
 }
 .consulbtn{
-    position: relative;
-    bottom: 30px;
-    left: 75px;
-    padding-top: 15px;
+     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 50px ;
     padding-right: 50px ;
@@ -248,8 +315,58 @@ padding-bottom: 140px;
 .shop{
     margin-top: 145px ;
 }
+.shop-box-child {
+    padding-top: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    
+   
+      
+}
+.shop-box-child{
+box-shadow: 0px 3px 24.57px 2.43px rgb(0 0 0 / 18%);
+    border-radius: 50px;
+}
+.shop-star i{
+    font-size: 20px;
+    cursor: pointer;
 
+}
+.shop-star i:hover{
+    color: #F0BC2B;
 
+}
 
+.shop-box-child img{
+    margin-bottom: 30px;
+}
 
+.shop-star-P{
+    margin-top: -4px;
+}
+.shop-next-btn{
+    height: 50px;
+    width: 50px;
+    background-color: white ;
+    border-radius: 50%;
+    display: inline-block;
+       font-size: 40px;
+       font-weight: 900;
+       text-align: center;
+        box-shadow: 0px 3px 24.57px 2.43px rgba(0, 0, 0, 0.18);
+        color: #F0BC2B;
+        position: relative;
+        left: 55px;
+        bottom: 15px;
+        cursor: pointer;
+}
+.shop-next-btn:hover{
+background-color: #F0BC2B;
+color: white;
+}
+
+.shop-text{
+    display: inline-block;
+}
 /* shop end */
