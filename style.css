@@ -820,4 +820,8 @@ font-size: 20px;
     padding-bottom: 5px;
 }
 
+.card-content{
+    width: 306px;
+}
+
 }
