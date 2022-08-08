@@ -39,6 +39,9 @@ header{
 /* END HEADER */
 
 /* BANNER */
+.banner .col-12{
+
+}
 .contactbtn{
     background-color:  black;
     border: none;
@@ -267,6 +270,9 @@ background-color: white;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border-top: none;
+}
+.card-content{
+    width: 306px;
 }
 /* .img-border{
     padding: 20px;
@@ -820,8 +826,39 @@ font-size: 20px;
     padding-bottom: 5px;
 }
 
-.card-content{
+/* .card-content{
     width: 306px;
+} */
+
 }
 
+
+/* Mobile screen */
+@media only screen and (max-width: 520px){
+.banner {
+    padding-left: 50px;
+}
+.form-content h1 {
+    text-align: center;
+}
+/* .card-container .row{
+    justify-content: center;
+    text-align: center;
+} */
+/* .card-content {
+    width: 347px;
+    padding-left: 41px;
+} */
+.form-group input{
+    width: 70px;
+}
+.form-group input {
+    width: 231px;
+}
+.form-control{
+    width: auto;
+}
+.form-group .mb3 .textinput{
+    width: 300px !important;
+}
 }
